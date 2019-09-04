@@ -4,9 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 
+//Temporal
+import { FormsModule } from '@angular/forms';
+
+
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+// import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
+// import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
 // import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 // import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -24,6 +31,8 @@ import { RegisterComponent } from './login/register.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    // GraficoDonaComponent,
+    // IncrementadorComponent,
     
     // {--lOS MOVIMOS AL PAGES.MODULE.TS--}
     // DashboardComponent,
@@ -40,7 +49,9 @@ import { RegisterComponent } from './login/register.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
