@@ -4,6 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 
+
+
+
+//Servicios
+
+import { ServiceModule } from './services/service.module';
+
 //Temporal
 import { FormsModule } from '@angular/forms';
 
@@ -52,8 +59,9 @@ import { RegisterComponent } from './login/register.component';
     PagesModule,
     FormsModule,
     
+    
   ],
-  providers: [],
+  providers: [ServiceModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
